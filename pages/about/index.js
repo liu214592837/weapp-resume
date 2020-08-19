@@ -26,9 +26,9 @@ Page({
 
   // 拨打电话
   phoneCall: function() {
-    const { phone } = this.data.resume;
+    const { phoneNumber } = this.data.resume;
     wx.makePhoneCall({
-      phoneNumber: phone,
+      phoneNumber: phoneNumber,
       complete: (res) => {},
       fail: (res) => {},
       success: (res) => {},
@@ -42,13 +42,13 @@ Page({
       job,
       wechatNumber,
       companyName,
-      phone
+      phoneNumber
     } = this.data.resume
 
     wx.addPhoneContact({
       firstName: name,
       remark: job,
-      mobilePhoneNumber: phone,
+      mobilePhoneNumber: phoneNumber,
       weChatNumber: wechatNumber,
       organization: companyName,
       title: job

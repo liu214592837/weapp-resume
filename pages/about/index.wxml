@@ -47,6 +47,10 @@
       <text class="cuIcon-attentionfavor"></text>
       <text class="margin-left-sm">{{resume.schoolMajor}}</text>
     </view>
+    <view class="margin-top-sm" wx:if="{{resume.englishLevel}}">
+      <text class="cuIcon-rank"></text>
+      <text class="margin-left-sm">{{resume.englishLevel}}</text>
+    </view>
   </view>
 
   <!-- 自我评价 -->

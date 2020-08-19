@@ -1,0 +1,14 @@
+page {
+  background: #fff;
+}
+
+.cu-bar {
+  min-height: 50rpx;
+}
+.padding-style {
+  padding: 0 30rpx 30rpx;
+}
+
+.solid-bottom::after {
+  border-bottom: none;
+} 

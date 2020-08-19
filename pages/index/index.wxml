@@ -1,0 +1,15 @@
+<view class="cu-timeline">
+  <view class="cu-item text-blue" wx:for="{{workList}}" wx:key="index">
+    <view class="bg-gradual-blue content shadow">
+      <view class="text-df padding-bottom-xs">{{item.companyName}}</view>
+      <view class="text-df padding-bottom-xs">{{item.department}}</view>
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">{{item.jobs}}</view>
+        <view class="cu-tag line-white">{{item.times}}</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view class="text-justify" wx:for="{{item.introduce}}" wx:for-item="val" wx:key="i">{{val}}</view>
+      </view>
+    </view>   
+  </view>
+</view>

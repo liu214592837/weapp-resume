@@ -1,0 +1,149 @@
+.container {
+  position: relative;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://mmbiz.qpic.cn/mmbiz_jpg/GxbBAxrsEibpXx808iaVdEJ70eUvxjDWiaJgDfQ2gqN3ovbIH9gzIJnqqxKG12fCGKzBORGofM2nQKgY4ibdKHotAw/0?wx_fmt=jpeg');
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.common {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.title {
+  margin-top: -340rpx;
+  font-size: 80rpx;
+  text-shadow:0 0 5px #CCCCCC, 0 0 10px #CCCCCC, 0 0 15px #CCCCCC, 0 0 20px #095816, 0 0 25px #095816, 0 0 30px #095816, 0 0 50px #095816, 0 0 80px #095816, 0 0 100px #095816, 0 0 150px #095816;
+}
+.subtitle {
+  margin-top: -240rpx;
+  font-size: 50rpx;
+  font-family: 'Times New Roman', Times, serif;
+  color: #d79d31;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.3),0 3px 5px rgba(0,0,0,0.2),0 5px 10px rgba(0,0,0,0.25);
+}
+.desc {
+  margin-top: 180rpx;
+  font-size: 35rpx;
+  text-shadow: 2px 2px 1px pink;
+  /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.3),0 3px 5px rgba(0,0,0,0.2),0 5px 10px rgba(0,0,0,0.25); */
+}
+
+.subdesc {
+  margin-top: 260rpx;
+  font-size: 35rpx;
+  text-shadow: 2px 2px 1px pink;
+}
+
+/* Animation */
+.animate2 {
+  margin-top: -340rpx;
+  font-size: 80rpx;
+}
+.animate2 text {
+  opacity: 0;
+  display: inline-block;
+  transform: translate(-150px, -50px) rotate(-180deg) scale(3);
+  animation: revolveScale 3s forwards;
+}
+.animate2 text:nth-of-type(2) {
+  animation-delay: .1s;
+}
+.animate2 text:nth-of-type(3) {
+  animation-delay: .15s;
+}
+.animate2 text:nth-of-type(4) {
+  animation-delay: .2s;
+}
+
+
+.animate text:nth-of-type(2) {
+  animation-delay: 2.0s;
+}
+.animate text:nth-of-type(3) {
+  animation-delay: 2.05s;
+}
+.animate text:nth-of-type(4) {
+  animation-delay: 2.1s;
+}
+.animate text:nth-of-type(5) {
+  animation-delay: 2.15s;
+}
+.animate text:nth-of-type(6) {
+  animation-delay: 2.2s;
+}
+.animate text:nth-of-type(7) {
+  animation-delay: 2.25s;
+}
+.animate text:nth-of-type(8) {
+  animation-delay: 2.3s;
+}
+.animate text:nth-of-type(9) {
+  animation-delay: 2.35s;
+}
+.animate text:nth-of-type(10) {
+  animation-delay: 2.4s;
+}
+.animate text:nth-of-type(11) {
+  animation-delay: 2.45s;
+}
+.animate text:nth-of-type(12) {
+  animation-delay: 2.5s;
+}
+.animate text:nth-of-type(13) {
+  animation-delay: 2.55s;
+}
+.animate text:nth-of-type(14) {
+  animation-delay: 2.6s;
+}
+.animate text:nth-of-type(15) {
+  animation-delay: 2.65s;
+}
+.animate text:nth-of-type(16) {
+  animation-delay: 2.7s;
+}
+.animate text {
+  opacity: 0;
+  display: inline-block;
+  transform: translate(-150px, -50px) rotate(-180deg) scale(3);
+  animation: revolveScale 3s forwards;
+}
+
+@keyframes revolveScale {
+  60% {
+    transform: translate(20px, 20px) rotate(30deg) scale(.3);
+  }
+  100% {
+    transform: translate(0) rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* 淡入淡出效果 */
+#fadeIn {
+  animation: fadeIn 3s 1;
+}
+#fadeIn2 {
+  animation: fadeIn 1s 3 2s;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+      opacity: 0; /*中间状态 透明度为0*/
+    }
+    100% {
+      opacity: 1; /*结尾状态 透明度为1*/
+    }
+  }

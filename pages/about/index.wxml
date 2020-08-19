@@ -1,0 +1,64 @@
+<view class="padding">
+  <view class="padding-xl radius shadow-warp bg-white margin-top">
+    <view class="flex justify-center">
+      <image class="cu-avatar xl round" src="../../images/avator.png"></image>
+    </view>
+    <view class="flex justify-center margin-top-sm">
+      <text class="text-bold">刘斌</text>
+    </view>
+    <view class="flex justify-center margin-top-sm">
+      <text>期望职位：</text>
+      <text class="text-shadow text-orange">前端开发</text>
+    </view>
+    <view class="flex justify-center margin-top-sm">
+      <text>男</text>
+      <text class="margin-left-sm">22岁</text>
+      <text class="margin-left-sm">2年工作经验</text>
+    </view>
+    <view class="flex justify-around margin-top-sm">
+      <view bindtap="showQrcode">
+        <text class="cuIcon-weixin text-xl text-blue"></text>
+        <text class="margin-left-xs">添加微信</text>
+      </view>
+      <view bindtap="phoneCall">
+        <text class="cuIcon-phone text-xl text-blue"></text>
+        <text class="margin-left-xs">拨打电话</text>
+      </view>
+      <view bindtap="saveContact">
+        <text class="cuIcon-addressbook text-xl text-blue"></text>
+        <text class="margin-left-xs">保存通讯录</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 教育经历 -->
+  <view class="padding-xl radius shadow-warp bg-white margin-top">
+    <view class="cuIcon-medalfill text-xl text-blue text-center"></view>
+    <view class="edu margin-top text-center text-bold"></view>
+    <view class="margin-top">
+      <text class="cuIcon-time"></text>
+      <text class="margin-left-sm">2016.9-2019.7</text>
+    </view>
+    <view class="margin-top-sm">
+      <text class="cuIcon-home"></text>
+      <text class="margin-left-sm">郑州升达经贸管理学院</text>
+    </view>
+    <view class="margin-top-sm">
+      <text class="cuIcon-attentionfavor"></text>
+      <text class="margin-left-sm">电子商务</text>
+    </view>
+  </view>
+
+  <!-- 自我评价 -->
+  <view class="padding-xl radius shadow-warp bg-white margin-top">
+    <view class="cuIcon-appreciatefill text-xl text-blue text-center"></view>
+    <view class="evaluate margin-top text-center text-bold"></view>
+    <view class="margin-top evaluate-cont">
+      <text>1. 性格乐观、稳重，踏实，兴趣广泛，勤奋好学；</text>
+      <text>2. 责任心强，适应能力强，意志坚毅不拔，执行力强，善于沟通；</text>
+      <text>3. 勇于迎接新的挑战，具备很强的事业心和团队协作的精神，愿接受一切工作的考验，相信自己的加入会给企业或是公司创造更高的价值。</text>
+    </view>
+
+  </view>
+
+</view>

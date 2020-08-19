@@ -1,0 +1,14 @@
+<scroll-view scroll-y class="scrollPage">
+	<view wx:for="{{skillList}}">
+		<view class="cu-bar bg-white solid-bottom padding-top">
+			<view class="action">
+				<text class="cuIcon-title text-{{item.color}}"></text>{{item.skillName}}
+			</view>
+		</view>
+		<view class="padding bg-white padding-style">
+			<view class="cu-progress round striped active">
+				<view class="bg-{{item.color}}" style="width:{{loading ? item.progress : ''}};">{{item.progress}}</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>

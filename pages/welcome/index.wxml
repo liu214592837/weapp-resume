@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="bg">
+    <!-- <image src="/images/welcome_2.jpg" class="img"></image> -->
+    <text class="common title">个性简历</text>
+    <text class="common subtitle" id="fadeIn">RESUME</text>
+    <view class="common desc animate">
+      <text>我</text>
+      <text>相</text>
+      <text>信</text>
+      <text>我</text>
+      <text>会</text>
+      <text>成</text>
+      <text>为</text>
+      <text>繁</text>
+      <text>星</text>
+      <text>中</text>
+      <text>最</text>
+      <text>亮</text>
+      <text>的</text>
+      <text>那</text>
+      <text>一</text>
+      <text>颗</text>
+    </view>
+    <text class="common subdesc" id="fadeIn2">期待您的发现......</text>
+    <view class="common animate2">
+      <text>个</text><text>性</text><text>简</text><text>历</text>
+    </view>
+  </view>
+
+</view>

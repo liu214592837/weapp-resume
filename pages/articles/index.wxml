@@ -1,0 +1,49 @@
+<view class="bg-white">
+  <swiper class="card-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+    <swiper-item wx:for="{{swiperList}}" wx:key="index" class="{{cardCur==index?'cur':''}}">
+      <view class="swiper-item" bindtap="bindViewTap" data-mid="{{item.mid}}" data-sn="{{item.sn}}" data-chksm="{{item.chksm}}">
+        <image src="{{item.imgUrl}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+        <video src="{{item.imgUrl}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="box">
+  <view class="cu-bar bg-white">
+    <view class="action sub-title">
+      <text class="text-xl text-bold text-blue">文章精选</text>
+      <text class="text-ABC text-blue">choice</text>
+      <!-- last-child选择器-->
+    </view>
+  </view>
+</view>
+
+<view class="cu-card case">
+  <view class="cu-item shadow" wx:for="{{articleList}}" wx:key="index">
+    <view class="image" bindtap="bindViewTap" data-mid="{{item.mid}}" data-sn="{{item.sn}}" data-chksm="{{item.chksm}}">
+      <image src="{{item.imgUrl}}" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">{{item.tag}}</view>
+      <view class="cu-bar bg-shadeBottom">
+        <text class="text-cut">{{item.title}}</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{item.avatar}});"></view>
+        <view class="content flex-sub">
+          <view class="text-grey">{{item.author}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{item.createTime}}
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text> {{item.view}}
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text> {{item.star}}
+              <text class="cuIcon-messagefill margin-lr-xs"></text> {{item.comment}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

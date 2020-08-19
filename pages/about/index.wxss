@@ -1,0 +1,34 @@
+.cuIcon-weixin, 
+.cuIcon-phone, 
+.cuIcon-addressbook {
+  vertical-align: -3rpx;
+}
+
+.edu,
+.evaluate {
+  height: 1px;
+  border-top: 1px solid #ddd;
+}
+.edu::before,
+.evaluate::before {
+  position: relative;
+  top: -25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: #fff;
+  padding: 0 20rpx;
+}
+.edu::before {
+  content: '教育经历';
+}
+.evaluate::before {
+  content: '自我评价';
+}
+
+.evaluate-cont {
+  text-align: justify;
+}
+
+.evaluate-cont text {
+  display: block;
+}

@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/about/index",
+    "pages/index/index",
+    "pages/skill/index",
+    "pages/blog/index",
+    "pages/articles/index",
+    "pages/article/index"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0081ff",
+    "navigationBarTitleText": "个人简历",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#0081ff",
+    "list": [
+      {
+        "pagePath": "pages/about/index",
+        "selectedIconPath": "images/nav_4_active.png",
+        "iconPath": "images/nav_4.png",
+        "text": "基本信息"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/nav_1_active.png",
+        "iconPath": "images/nav_1.png",
+        "text": "工作经验"
+      },
+      {
+        "pagePath": "pages/skill/index",
+        "selectedIconPath": "images/nav_2_active.png",
+        "iconPath": "images/nav_2.png",
+        "text": "专业技能"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

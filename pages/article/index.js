@@ -19,7 +19,6 @@ Page({
     //   icon: 'loading',
     //   duration: 1000
     // })
-    console.log('options===',options)
       this.setData({
         mid: options.mid,
         sn: options.sn,

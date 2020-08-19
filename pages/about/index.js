@@ -17,16 +17,18 @@ Page({
 
   // 添加个人微信
   showQrcode: function() {
+    const { wxQrcode } = this.data.resume
     wx.previewImage({
-      current: 'http://m.qpic.cn/psc?/V13CtUlR1Y82A2/bqQfVz5yrrGYSXMvKr.cqbPf*1GeoYXhHPFSBdl9p2eKQm*bJ9ityyAIhzn5s*scdYya0C4bPMZx0KJqR2TYdonJlCeUMoBw7hguz8AVZyk!/b&bo=OAR2BQAAAAADB20!&rf=viewer_4', // 当前显示图片的http链接
-      urls: ['http://m.qpic.cn/psc?/V13CtUlR1Y82A2/bqQfVz5yrrGYSXMvKr.cqbPf*1GeoYXhHPFSBdl9p2eKQm*bJ9ityyAIhzn5s*scdYya0C4bPMZx0KJqR2TYdonJlCeUMoBw7hguz8AVZyk!/b&bo=OAR2BQAAAAADB20!&rf=viewer_4'] // 需要预览的图片http链接列表
+      current: wxQrcode, // 当前显示图片的http链接
+      urls: [wxQrcode] // 需要预览的图片http链接列表
     })
   },
 
   // 拨打电话
   phoneCall: function() {
+    const { phone } = this.data.resume;
     wx.makePhoneCall({
-      phoneNumber: '13526606371',
+      phoneNumber: phone,
       complete: (res) => {},
       fail: (res) => {},
       success: (res) => {},
@@ -35,13 +37,21 @@ Page({
 
   // 保存通讯录
   saveContact: function() {
+    const {
+      name,
+      job,
+      wechatNumber,
+      companyName,
+      phone
+    } = this.data.resume
+
     wx.addPhoneContact({
-      firstName: '刘斌',
-      remark: '前端工程师',
-      mobilePhoneNumber: '1352660371',
-      weChatNumber: '13526606371',
-      organization: '千米网',
-      title: '前端工程师'
+      firstName: name,
+      remark: job,
+      mobilePhoneNumber: phone,
+      weChatNumber: wechatNumber,
+      organization: companyName,
+      title: job
     })
   },
 

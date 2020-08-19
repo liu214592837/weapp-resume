@@ -1,19 +1,19 @@
 <view class="padding">
   <view class="padding-xl radius shadow-warp bg-white margin-top">
     <view class="flex justify-center">
-      <image class="cu-avatar xl round" src="../../images/avator.png"></image>
+      <image class="cu-avatar xl round" src="{{resume.headerImg}}"></image>
     </view>
     <view class="flex justify-center margin-top-sm">
-      <text class="text-bold">刘斌</text>
+      <text class="text-bold">{{resume.name}}</text>
     </view>
     <view class="flex justify-center margin-top-sm">
       <text>期望职位：</text>
-      <text class="text-shadow text-orange">前端开发</text>
+      <text class="text-shadow text-orange">{{resume.job}}</text>
     </view>
     <view class="flex justify-center margin-top-sm">
-      <text>男</text>
-      <text class="margin-left-sm">22岁</text>
-      <text class="margin-left-sm">2年工作经验</text>
+      <text>{{resume.gender}}</text>
+      <text class="margin-left-sm">{{resume.age}}岁</text>
+      <text class="margin-left-sm">{{resume.workingYeras}}</text>
     </view>
     <view class="flex justify-around margin-top-sm">
       <view bindtap="showQrcode">
@@ -37,15 +37,15 @@
     <view class="edu margin-top text-center text-bold"></view>
     <view class="margin-top">
       <text class="cuIcon-time"></text>
-      <text class="margin-left-sm">2016.9-2019.7</text>
+      <text class="margin-left-sm">{{resume.schoolYear}}</text>
     </view>
     <view class="margin-top-sm">
       <text class="cuIcon-home"></text>
-      <text class="margin-left-sm">郑州升达经贸管理学院</text>
+      <text class="margin-left-sm">{{resume.schoolName}}</text>
     </view>
     <view class="margin-top-sm">
       <text class="cuIcon-attentionfavor"></text>
-      <text class="margin-left-sm">电子商务</text>
+      <text class="margin-left-sm">{{resume.schoolMajor}}</text>
     </view>
   </view>
 
@@ -54,9 +54,7 @@
     <view class="cuIcon-appreciatefill text-xl text-blue text-center"></view>
     <view class="evaluate margin-top text-center text-bold"></view>
     <view class="margin-top evaluate-cont">
-      <text>1. 性格乐观、稳重，踏实，兴趣广泛，勤奋好学；</text>
-      <text>2. 责任心强，适应能力强，意志坚毅不拔，执行力强，善于沟通；</text>
-      <text>3. 勇于迎接新的挑战，具备很强的事业心和团队协作的精神，愿接受一切工作的考验，相信自己的加入会给企业或是公司创造更高的价值。</text>
+      <text wx:for="{{resume.selfEvaluation}}" wx:key="index">{{item}}</text>
     </view>
 
   </view>

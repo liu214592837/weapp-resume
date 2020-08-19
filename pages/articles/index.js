@@ -81,7 +81,7 @@ Page({
   },
 
   bindViewTap: function(e) {
-    console.log('e',e.currentTarget)
+
     wx.navigateTo({
       url: `/pages/article/article?mid=${e.currentTarget.dataset.mid}&sn=${e.currentTarget.dataset.sn}&chksm=${e.currentTarget.dataset.chksm}`,
     })

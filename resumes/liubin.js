@@ -18,6 +18,9 @@
  *          times:在职时间
  *          introduce:[
  *              工作介绍
+ *          ],
+ *          projectList:[
+ *              在本公司所开发的项目（没有可以不填）
  *          ]
  *      }]
  * skillList：职业技能

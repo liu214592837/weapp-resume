@@ -1,7 +1,15 @@
 <view class="cu-timeline">
   <view class="cu-item text-blue" wx:for="{{resume.workList}}" wx:key="index">
     <view class="bg-gradual-blue content shadow">
-      <view class="text-df padding-bottom-xs">{{item.companyName}}</view>
+      <view class="text-df padding-bottom-xs flex justify-between">
+        <view class="text-cut">{{item.companyName}}</view>
+        <view wx:if="{{item.projectList && item.projectList.length > 0}}">
+            <view class="cu-tag line-white round" data-company-name="{{item.companyName}}" bindtap="goProjectList">
+              项目经历
+              <text class="cuIcon-right lg text-white"></text>
+            </view>
+        </view>
+      </view>
       <view class="text-df padding-bottom-xs">部门：{{item.department}}</view>
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-blue">{{item.job}}</view>

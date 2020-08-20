@@ -47,7 +47,6 @@ Page({
 
     wx.addPhoneContact({
       firstName: name,
-      remark: job,
       mobilePhoneNumber: phoneNumber,
       weChatNumber: wechatNumber,
       organization: companyName,

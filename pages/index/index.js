@@ -28,4 +28,11 @@ Page({
       }
     })
   },
+
+  goProjectList:function (e){
+    // const {companyName} = e.currentTarget.dataset
+    // wx.navigateTo({
+    //   url: 'url',
+    // })
+  }
 })

@@ -4,5 +4,5 @@
  */
 
 module.exports = {
-    'currentAppId':'wx2e966d2474462e89'
+    'currentAppId':'wx35ff10a130f25b63'
 }

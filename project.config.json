@@ -27,12 +27,12 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
-	"appid": "wx2e966d2474462e89",
+	"appid": "wx35ff10a130f25b63",
 	"projectname": "wxResume",
 	"debugOptions": {
 		"hidedInDevtools": []

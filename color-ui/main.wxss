@@ -1,7 +1,7 @@
 /* ==================
         初始化
  ==================== */
-page {
+ page {
 	/* Color 可以自定义相关配色 */
 	/* var属性兼容性 --> https://www.caniuse.com/#feat=css-variables */
 	/* 标准色 */
@@ -797,7 +797,7 @@ button.icon.lg {
 	box-sizing: border-box;
 	padding: 0rpx 16rpx;
 	height: 48rpx;
-	font-family: Helvetica Neue, Helvetica, sans-serif;
+	/* font-family: Helvetica Neue, Helvetica, sans-serif; */
 	white-space: nowrap;
 }
 

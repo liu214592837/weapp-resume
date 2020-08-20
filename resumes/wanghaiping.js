@@ -43,6 +43,7 @@ module.exports = {
     age: '23',
     job: 'JAVA开发工程师',
     workingYeras: '1年半工作经验',
+    currentCity:'江苏南京',
     phoneNumber: '13592438831',
     wechatNumber: '13592438831',
     schoolYear: '2016.9-2020.7',

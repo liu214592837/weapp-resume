@@ -2,6 +2,7 @@
  * name:姓名
  * gender:性别
  * age:年龄
+ * currentCity:当前城市 省市
  * job: 面试的职位 && 保存通讯录时的职位
  * workingYeras:工作经验 || 应届
  * phoneNumber:电话号码
@@ -42,6 +43,7 @@ module.exports = {
     age: '22',
     job: '前端工程师',
     workingYeras: '2年工作经验',
+    currentCity:'江苏南京',
     phoneNumber: '13526606371',
     wechatNumber: '13526606371',
     schoolYear: '2016.9-2019.7',

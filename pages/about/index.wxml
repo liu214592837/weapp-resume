@@ -1,66 +1,69 @@
 <view class="padding">
-  <view class="padding-xl radius shadow-warp bg-white margin-top">
-    <view class="flex justify-center">
-      <image class="cu-avatar xl round" src="{{resume.headerImg}}"></image>
-    </view>
-    <view class="flex justify-center margin-top-sm">
-      <text class="text-bold">{{resume.name}}</text>
-    </view>
-    <view class="flex justify-center margin-top-sm">
-      <text>期望职位：</text>
-      <text class="text-shadow text-orange">{{resume.job}}</text>
-    </view>
-    <view class="flex justify-center margin-top-sm">
-      <text>{{resume.gender}}</text>
-      <text class="margin-left-sm">{{resume.age}}岁</text>
-      <text class="margin-left-sm">{{resume.workingYeras}}</text>
-    </view>
-    <view class="flex justify-around margin-top-sm">
-      <view bindtap="showQrcode">
-        <text class="cuIcon-weixin text-xl text-blue"></text>
-        <text class="margin-left-xs">添加微信</text>
-      </view>
-      <view bindtap="phoneCall">
-        <text class="cuIcon-phone text-xl text-blue"></text>
-        <text class="margin-left-xs">拨打电话</text>
-      </view>
-      <view bindtap="saveContact">
-        <text class="cuIcon-addressbook text-xl text-blue"></text>
-        <text class="margin-left-xs">保存通讯录</text>
-      </view>
-    </view>
-  </view>
-  
-  <!-- 教育经历 -->
-  <view class="padding-xl radius shadow-warp bg-white margin-top">
-    <view class="cuIcon-medalfill text-xl text-blue text-center"></view>
-    <view class="edu margin-top text-center text-bold"></view>
-    <view class="margin-top">
-      <text class="cuIcon-time"></text>
-      <text class="margin-left-sm">{{resume.schoolYear}}</text>
-    </view>
-    <view class="margin-top-sm">
-      <text class="cuIcon-home"></text>
-      <text class="margin-left-sm">{{resume.schoolName}}</text>
-    </view>
-    <view class="margin-top-sm">
-      <text class="cuIcon-attentionfavor"></text>
-      <text class="margin-left-sm">{{resume.schoolMajor}}</text>
-    </view>
-    <view class="margin-top-sm" wx:if="{{resume.englishLevel}}">
-      <text class="cuIcon-rank"></text>
-      <text class="margin-left-sm">{{resume.englishLevel}}</text>
-    </view>
-  </view>
+	<view class="padding-xl radius shadow-warp bg-white margin-top">
+		<view class="flex justify-center">
+			<!-- <image class="cu-avatar xl round" src="{{resume.headerImg}}"></image> -->
+			<view class="cu-avatar round xl" style="background-image:url({{resume.headerImg}});">
+				 <view class="cu-tag badge {{3%2==0?'cuIcon-female bg-pink':'cuIcon-male bg-blue'}}"></view>
+			</view>
+		</view>
+		<view class="flex justify-center margin-top-sm">
+			<text class="text-bold text-lg">{{resume.name}}</text>
+		</view>
+		<view class="flex justify-center margin-top-sm">
+			<text>期望职位：</text>
+			<text class="text-shadow text-orange">{{resume.job}}</text>
+		</view>
+		<view class="flex justify-center margin-top-sm">
+			<text>{{resume.age}}岁</text>
+			<text class="margin-left-sm">{{resume.workingYeras}}</text>
+      <text class="margin-left-sm">{{resume.currentCity}}</text>
+		</view>
+		<view class="flex justify-around margin-top-sm">
+			<view bindtap="showQrcode">
+				<text class="cuIcon-weixin text-xl text-blue"></text>
+				<text class="margin-left-xs">添加微信</text>
+			</view>
+			<view bindtap="phoneCall">
+				<text class="cuIcon-phone text-xl text-blue"></text>
+				<text class="margin-left-xs">拨打电话</text>
+			</view>
+			<view bindtap="saveContact">
+				<text class="cuIcon-addressbook text-xl text-blue"></text>
+				<text class="margin-left-xs">保存通讯录</text>
+			</view>
+		</view>
+	</view>
 
-  <!-- 自我评价 -->
-  <view class="padding-xl radius shadow-warp bg-white margin-top">
-    <view class="cuIcon-appreciatefill text-xl text-blue text-center"></view>
-    <view class="evaluate margin-top text-center text-bold"></view>
-    <view class="margin-top evaluate-cont">
-      <text wx:for="{{resume.selfEvaluation}}" wx:key="index">{{item}}</text>
-    </view>
+	<!-- 教育经历 -->
+	<view class="padding-xl radius shadow-warp bg-white margin-top">
+		<view class="cuIcon-medalfill text-xl text-blue text-center"></view>
+		<view class="edu margin-top text-center text-bold"></view>
+		<view class="margin-top">
+			<text class="cuIcon-time"></text>
+			<text class="margin-left-sm">{{resume.schoolYear}}</text>
+		</view>
+		<view class="margin-top-sm">
+			<text class="cuIcon-home"></text>
+			<text class="margin-left-sm">{{resume.schoolName}}</text>
+		</view>
+		<view class="margin-top-sm">
+			<text class="cuIcon-attentionfavor"></text>
+			<text class="margin-left-sm">{{resume.schoolMajor}}</text>
+		</view>
+		<view class="margin-top-sm" wx:if="{{resume.englishLevel}}">
+			<text class="cuIcon-rank"></text>
+			<text class="margin-left-sm">{{resume.englishLevel}}</text>
+		</view>
+	</view>
 
-  </view>
+	<!-- 自我评价 -->
+	<view class="padding-xl radius shadow-warp bg-white margin-top">
+		<view class="cuIcon-appreciatefill text-xl text-blue text-center"></view>
+		<view class="evaluate margin-top text-center text-bold"></view>
+		<view class="margin-top evaluate-cont">
+			<text wx:for="{{resume.selfEvaluation}}" wx:key="index">{{item}}</text>
+		</view>
+
+	</view>
 
 </view>

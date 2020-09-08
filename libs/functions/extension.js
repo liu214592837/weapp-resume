@@ -1,5 +1,5 @@
-const infoBehavior = require('../../behaviors/info-behavior');
 
+import infoBehavior from '../../behaviors/info-behavior';
 import event from '../events';
 
 // Page 扩展

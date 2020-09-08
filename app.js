@@ -1,13 +1,8 @@
 import appInfo from './appinfo';
-
-require('./libs/functions/extension.js');
-
+import './libs/functions/extension.js';
 
 App({
   onLaunch: function () {
-
-
-
 
     // 获取用户信息
     wx.getSetting({

@@ -26,6 +26,6 @@ App({
     })
   },
   globalData: {
-    currentAppId:appInfo.currentAppId
+    currentAppId:appInfo.currentAppId,
   }
 })
